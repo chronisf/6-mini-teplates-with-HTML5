@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title>example 5</title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu;min-width: 250px;}
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+ img {
+    
+    height: auto;
+     float:left;
+}   
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+  width:250 px;
+    
+    background-color:  #0099e6;
+    border: 2px solid   #0000ff;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid  #0000ff;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color:  #005580;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #4d4d00;
+    color: white;
+}       
+    
+    
+.grid-container {
+  display: grid;
+  grid-template-areas:
+'header header  header header header header header header '
+'menu menu main main main main  right right'   
+'footer footer footer footer footer footer footer footer ';
+  grid-gap: 2px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+.grid-container > div {
+  background-color:white;
+  text-align: center;
+  padding: 0 0;
+  font-size: 20px;
+} 
+ @media only screen and (max-width: 500px) {
+  .grid-container {
+   display: grid;
+  grid-template-areas:
+    'header header  header'
+    'menu menu menu'
+    'main main main'
+    'right right right '  
+    'footer footer footer  ';
+  grid-gap: 2px;
+  background-color: green;
+  padding: 5px;
+}    
+     .grid-container > div {
+  background-color:white;
+  text-align: center;
+color:red;     
+  padding: 0 0;
+  font-size: 20px;
+}
+     
+}   
+</style>
+</head>
+<body>
+<div class="grid-container">
+ 
+    
+<div class="item1">
+ <h1>Grid Layout</h1>
+    </div>
+    
+    
+<div class="item2">   
+<ul>
+  <li><a class="active" href="example1.html">Home</a></li>
+  <li><a href="https://elearn.elke.uoa.gr/">elearning</a></li>
+  <li><a href="https://www.google.gr/">Google</a></li>
+
+</ul>    
+    </div>
+    
+  <div class="item3">
+<img src="images/dolphins.jpg" width="230" height="173">
+    
+<p>Lorem ipsum dolor sit amet, massa neque ac cras sit, nulla penatibus elementum dui, elit enim nec tristique. Ultrices nam nonummy, a est dignissim vitae, sit vestibulum diam, risus laoreet. At amet in sed, mattis ultrices, purus sit molestie aliquid, integer a scelerisque lorem curabitur nullam. Pellentesque nam 
+      
+ κείμενο... κείμενο  
+</p>
+ 
+    </div>  
+    
+  <div class="item4">
+      <p>Lorem ipsum dolor sit amet, massa neque ac cras sit, nulla penatibus elementum dui, elit enim nec tristique. Ultrices nam nonummy, a est dignissim vitae, sit vestibulum diam, risus laoreet. At amet in sed, mattis ultrices, purus sit molestie aliquid, integer a scelerisque lorem curabitur nullam. Pellentesque nam dolore velit vestibulum conubia nisl, pellentesque vel est eu facilisis.
+      </p>
+    </div>
+    
+  <div class="item5"> &#169; copyright... </div>
+    
+</div>
+
+</body>
+</html>

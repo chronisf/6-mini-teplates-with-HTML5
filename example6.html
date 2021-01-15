@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>example 6</title>    
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ img {
+    
+    height: auto;
+     float:left;
+}   
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+  width:250 px;
+    
+    background-color:  #0099e6;
+    border: 2px solid   #0000ff;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid  #0000ff;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color:  #005580;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #4d4d00;
+    color: white;
+}  
+    
+          
+.header {
+    background-color: floralwhite;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+      border: 3px solid blue;
+}
+
+
+    
+.flex {
+    display: flex;
+}
+
+.side {
+ 
+   
+   flex: 1;
+}
+
+.main {
+  
+    flex: 2;
+}
+    
+
+.footer {
+    background-color: floralwhite;
+    padding: 10px;
+    text-align: center;
+      border: 3px solid blue;
+}
+ 
+    
+.flex > div {
+  background-color:floralwhite;
+  text-align: center;
+  padding: 0 0;
+  font-size: 20px;
+min-height:300px;    
+border: 3px solid blue;
+}     
+
+    
+@media only screen and (max-width: 600px) {
+   
+    .flex {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    
+    .flex > div {
+  min-height: 400px;
+          color:red;
+}    
+        
+    
+}
+    
+</style>
+</head>
+<body>
+<div class="header">
+  <h2>Flex Layout</h2>
+</div>
+
+<div class="flex">
+  <div class="side" >
+<ul>
+  <li><a class="active" href="example1.html">Home</a></li>
+  <li><a href="https://elearn.elke.uoa.gr/">elearning</a></li>
+  <li><a href="https://www.google.gr/">Google</a></li>
+</ul>  
+      </div>
+     
+  <div class="main" >
+       <img src="images/dolphins.jpg" width="230" height="173">
+      <p>tester ipsum dolor sit amet, massa neque ac cras sit, nulla penatibus elementum dui, elit enim nec tristique. Ultrices nam nonummy, a est dignissim vitae, sit vestibulum diam, risus laoreet. 
+          κείμενο... κείμενο... 
+      </p>
+    </div>
+    
+  <div class="side" >
+       <p>tester ipsum dolor sit amet, massa neque ac cras sit, nulla penatibus elementum dui, elit enim nec tristique. 
+      </p>  
+      </div>
+    
+</div>  
+
+<div class="footer">
+    <h3>&#169; copyright... </h3> 
+</div>
+
+</body>
+</html>

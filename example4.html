@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta charset="UTF-8">
+    <title>example 4</title>
+<style> 
+      .box1 {
+    width: 800px;
+    height: 800px;
+    background-color: red;
+    
+}
+
+    .anim1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;    
+    background-color: darkcyan;
+    animation-name: animation1 ;
+        position:relative;
+    animation-duration: 7s;
+    color:red;
+}
+
+@keyframes animation1 {
+    0%{left:0px; top:0px;}
+    25% {left:600px; top:0px;}
+    75% {left:600px;  top:600px;}
+    85% {left:0px;  top:600px;}
+    100%{left:0px;  top:0px;}
+}
+</style>
+</head>
+<body>
+
+<div class="box1">
+    
+    
+   <div class="anim1"> </div> 
+    
+    </div>
+
+
+</body>
+</html>
